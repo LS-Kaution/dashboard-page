@@ -1,0 +1,100 @@
+:root {
+    --header-background: #34675C;
+    --aside-background: #324851;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+aside {
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+    padding: 1rem;
+    background-color: var(--aside-background);
+    color: whitesmoke;
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.png-icons {
+    height: 4.5rem;
+    width: 4.5rem;  
+}
+
+aside > section > button {
+    height: 45px;
+    width: 85px;  
+    border-radius: 1rem;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+header {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: var(--header-background);
+}
+
+#png-search {
+    height: 2.5rem;
+    width: 2.5rem;  
+}
+
+#profile-img {
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 50%; 
+}
+
+#account {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+input[type="text"] {
+    height: 2.2rem;
+    width: 30rem;
+    background-color: #e4ddf4;
+    border-radius: 2rem;
+    border: black;
+}
+
+.header-buttons {
+    color: black;
+}
+
+#png-header-logo {
+    padding: 1rem;
+    width: 28rem;
+    height: 15rem;
+}
