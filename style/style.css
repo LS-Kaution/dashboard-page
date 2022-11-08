@@ -1,6 +1,16 @@
+@font-face {
+    font-family: '8-bit-font';
+    src: url(8-bit-font.ttf) format('truetype');
+}
+
 :root {
-    --header-background: #34675C;
-    --aside-background: #324851;
+    --header-background: #F1F1F2;
+    --aside-background: #BCBABE;
+    --header-and-sidebar-font-color: black;
+    --input-search-color: #e4ddf4;
+    --header-buttons-color: #de985e;
+    --header-buttons-font-color: #800080;
+    --box-colors: black;
 }
 
 * {
@@ -15,31 +25,58 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: url(cursor-hand.png), auto;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
+    cursor: url(cursor.png), auto;
     display: flex;
     height: 100vh;
     font-size: 1.6rem;
+    background-image: url(https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 aside {
-    height: 100%;
+    height: 95rem; /* Why does this error occur at 100% margin? */
     width: 30rem;
     display: flex;
     justify-content: start;
-    justify-items: center;
-    padding: 1rem;
     background-color: var(--aside-background);
-    color: whitesmoke;
+    color: var(--header-and-sidebar-font-color);
+}
+
+#png-sidebar-logo {
+    padding: 1rem;
+    width: 28rem;
+    height: 15rem;
 }
 
 aside section {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.sidebar-label:hover {
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.sidebar-icons {
+    display: flex;
+    align-items: center;
+    font-family: '8-bit-font';
+    gap: 1rem;
 }
 
 .png-icons {
@@ -52,49 +89,161 @@ aside > section > button {
     width: 85px;  
     border-radius: 1rem;
     background-color: blue;
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
 header {
     height: 15rem;
     width: 100%;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
     background-color: var(--header-background);
 }
 
+header > section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: '8-bit-font';
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+#search {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 #png-search {
+    height: 3rem;
+    width: 3rem;  
+}
+
+input[type="text"] {
+    height: 2.45rem;
+    width: 75rem;
+    padding: 1rem;
+    background-color: var(--input-search-color);
+    border-radius: 2rem;
+}
+
+#account-div {
+    display: flex;
+    align-items: center;
+    margin-left: 90rem;
+    gap: 1rem;
+}
+
+#png-notification {
     height: 2.5rem;
     width: 2.5rem;  
 }
 
 #profile-img {
-    height: 8.5rem;
-    width: 8.5rem;
+    height: 7.5rem;
+    width: 7.5rem;
     border-radius: 50%; 
 }
 
 #account {
-    height: 6rem;
-    width: 6rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 50%;
 }
 
-input[type="text"] {
-    height: 2.2rem;
-    width: 30rem;
-    background-color: #e4ddf4;
-    border-radius: 2rem;
-    border: black;
+#second-line-header {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-left: 72rem;
+}
+
+#profile-div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .header-buttons {
-    color: black;
+    height: 5.5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--header-buttons-font-color);
+    background-color: var(--header-buttons-color);
+    border-radius: 3rem;
 }
 
-#png-header-logo {
-    padding: 1rem;
-    width: 28rem;
-    height: 15rem;
+.header-buttons select {
+    color: var(--header-buttons-font-color);
+    font-family: '8-bit-font';
+    width: 8.5rem;
+    font-size: 1.6rem;
+}
+
+.png-header-icons {
+    height: 3.5rem;
+    width: 3.5rem;  
+}
+
+#grid-container {
+    padding: 2rem;
+    display: grid;
+    grid-template: 38rem 38rem / 45rem 45rem 33rem;
+    gap: 1rem;
+}
+
+.grid-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: '8-bit-font';
+    color: var(--header-buttons-font-color);
+    height: 34rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px 1px var(--box-colors);
+    border-radius: 2.5rem;
+    box-sizing: border-box;
+    background-color: var(--header-background);
+}
+
+.grid-items > p {
+    color: var(--box-colors);
+}
+
+.grid-items > h2 {
+    font-size: 1.5rem;
+}
+
+#h2-last-news {
+    margin-top: 3.6rem;
+}
+
+table, th, td {
+    color: var(--box-colors);
+    border: 0.1rem solid var(--box-colors);
+    text-align: center;
+}
+
+#grid-top-players {
+    height: 73rem;
+}
+
+.top-players {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--box-colors);
+    font-size: 1.2rem;
+}
+
+.profile-top-players {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
 }

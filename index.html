@@ -14,94 +14,263 @@
     <aside>
         <section>
 
-            <img src="style/header-logo.svg" alt="header-logo" id="png-header-logo">
+            <img src="style/sidebar-logo.svg" alt="sidebar-logo" id="png-sidebar-logo">
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-dashboard.png" alt="png-dashboard" class="png-icons" id="png-dashboard">
-                <label for="dashboard">Dashboard</label>
+                <label for="dashboard" class="sidebar-label">Dashboard</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-analytics.png" alt="png-analytics" class="png-icons" id="png-analytics">
-                <label for="analytics">Analytics</label>
+                <label for="analytics" class="sidebar-label">Analytics</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-resume-game.png" alt="png-resume-game" class="png-icons" id="png-resume-game">
-                <label for="resume-game">Resume Game</label>
+                <label for="resume-game" class="sidebar-label">Resume Game</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-profile.png" alt="png-profile" class="png-icons" id="png-profile">
-                <label for="profile">Profile</label>
+                <label for="profile" class="sidebar-label">Profile</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-messages.png" alt="png-messages" class="png-icons" id="png-messages">
-                <label for="messages">Messages</label>
+                <label for="messages" class="sidebar-label">Messages</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-commerce.png" alt="png-commerce" class="png-icons" id="png-commerce">
-                <label for="commerce">Commerce</label>
+                <label for="commerce" class="sidebar-label">Commerce</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-communities.png" alt="png-communities" class="png-icons" id="png-communities">
-                <label for="communities">Communities</label>
+                <label for="communities" class="sidebar-label">Communities</label>
             </div>
 
-            <div>
+            <div class="sidebar-icons">
                 <img src="style/png-settings.png" alt="png-settings" class="png-icons" id="png-settings">
-                <label for="settings">Settings</label>
+                <label for="settings" class="sidebar-label">Settings</label>
             </div>
 
-            <button>Log out</button>
+            <div class="sidebar-icons">
+                <img src="style/png-log-out.png" alt="png-log-out" class="png-icons" id="png-log-out">
+                <label for="log-out" class="sidebar-label">Log Out</label>
+            </div>
         </section>
 
     </aside>
 
     <header>
 
-        <div id="search">
-            <img src="style/png-search.png" alt="png-search" id="png-search">
-            <input type="text">
-        </div>
+        <section>
+            <div id="search">
+                <img src="style/png-search.png" alt="png-search" id="png-search">
+                <input type="text" placeholder="Search...">
+            </div>
 
-        <div>
-            <img src="style/profile-img.jpg" alt="profile-img" id="profile-img">
-        </div>
-        <p>Hi there,<br> Leonardo Saturno (#Kaution)</p>
+            <div id="account-div">
+                <img src="style/png-notification.png" alt="png-notification" id="png-notification">
+                <img src="style/profile-img.jpg" alt="profile-img" id="account">
+                <h2>Kaution</h2>
+            </div>
 
-        <div>
-            <img src="style/profile-img.jpg" alt="profile-img" id="account">
-            <label for="account-name">Kaution</label>
-        </div>
+        </section>
+
+        <section>
+
+            <div id="profile-div">
+                <img src="style/profile-img.jpg" alt="profile-img" id="profile-img">
+                <h1>Hi there,<br> Leonardo Saturno (@Kaution)</h1>
+            </div>
+
+            <div id="second-line-header">
+                <a href="https://www.youtube.com/watch?v=BtLSaxRnIhc" target="_blank">
+                    <div class="header-buttons">
+                        <img src="style/png-weapons.png" alt="png-weapons" class="png-header-icons" id="png-weapons">
+                        <label for="weapons">Weapons</label>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=BtLSaxRnIhc" target="_blank">
+                    <div class="header-buttons">
+                        <img src="style/png-sets.png" alt="png-sets" class="png-header-icons" id="png-sets">
+                        <label for="sets">Equipment</label>
+                    </div>
+                </a>
 
 
+                <div class="header-buttons">
+                    <img src="style/png-menu.png" alt="png-menu" class="png-header-icons">
+                    <select name="menu" id="header-menu">
+                        <option selected disabled>Menu</option>
+                        <option>Dashboard</option>
+                        <option>Analytics</option>
+                        <option>Resume Game</option>
+                        <option>Profile</option>
+                        <option>Messages</option>
+                        <option>Commerce</option>
+                        <option>Communities</option>
+                        <option>Settings</option>
+                        <option>Log out</option>
+                    </select>
+                </div>
+            </div>
+        </section>
 
-        <div>
-            <img src="style/png-weapons.png" alt="png-weapons" class="png-icons" id="png-weapons">
-            <label for="weapons">Weapons</label>
-        </div>
+        <main>
+            <section id="grid-container">
 
-        <div>
-            <img src="style/png-sets.png" alt="png-sets" class="png-icons" id="png-sets">
-            <label for="sets">Sets</label>
-        </div>
+                <div class="grid-items">
+                    <h1>The lastest news</h1>
 
-        <select name="menu" id="header-menu">
-            <option selected disabled>Menu</option>
-            <option>Dashboard</option>
-            <option>Analytics</option>
-            <option>Resume Game</option>
-            <option>Profile</option>
-            <option>Messages</option>
-            <option>Commerce</option>
-            <option>Communities</option>
-            <option>Settings</option>
-            <option>Log out</option>
-        </select>
+                    <p> Square Enix celebrates the 21st anniversary of the original
+                        by updating sales of the PlayStation 2 games
+                        PlayStation 2 games and their remasters.
+                        <br>
+                        <br>
+                        A Microsoft spokesperson has confirmed that special events will be
+                        coming out as games and will hit Xbox Game Pass first. The company
+                        promised this in 2021 heading into last year.
+                    </p>
+
+                    <h2 id="h2-last-news">Monday... 7/11/2022</h2>
+                </div>
+
+                <div class="grid-items">
+                    <h1>New patch 10.1</h1>
+
+                    <p>The final Halloween event will take place this weekend, the new character Karin is already here
+                        and the 2023 Pre-Season is hot on our heels. There's no time to waste, so let's get right to
+                        version 10.1.
+                        <br>
+                        <br>
+                        This version will be relatively light because we are preparing exciting changes for the
+                        Preseason that is just around the corner. For this reason we will implement some minor balance
+                        adjustments.
+                    </p>
+
+                    <h2>Saturday... 29/10/2022</h2>
+                </div>
+
+                <div class="grid-items" id="grid-top-players">
+                    <h1>Top players</h1>
+
+                    <div class="top-players">
+                        <img src="style/profile-img.jpg" alt="top-player-kaution" class="profile-top-players">
+                        <h2>Kaution</h2>
+                    </div>
+
+                    <div class="top-players">
+                        <img src="style/top-player-karin.jpg" alt="top-player-karin" class="profile-top-players">
+                        <h2>kårïn</h2>
+                    </div>
+
+                    <div class="top-players">
+                        <img src="style/top-player-mareylol3.jpg" alt="top-player-mareylol" class="profile-top-players">
+                        <h2>Mareylol3</h2>
+                    </div>
+
+                    <div class="top-players">
+                        <img src="style/top-player-kuigii.jpg" alt="top-player-kuigii" class="profile-top-players">
+                        <h2>Kuigii</h2>
+                    </div>
+
+                </div>
+
+                <div class="grid-items">
+                    <h1>Buy pass battle for Halloween event</h1>
+
+                    <p>
+                        Once you have purchased the battle pass, you will be able to get several rewards if you level up
+                        the battle pass.
+                        <br>
+                        <br>
+                        In Chapter 2 - Season 7, we implemented an updated mechanic to the battle pass:
+                        instead of receiving 1 reward per level as in previous seasons, you will now get battle stars
+                        that you can use to get the rewards of the available pages (10 pages in total)
+                    </p>
+
+                    <h2>Today... $5 per months</h2>
+                </div>
+
+                <div class="grid-items">
+                    <h1>Yours statistics for the last month</h1>
+
+                    <table>
+                        <tr>
+                            <th>Statistics</th>
+                            <th>Seed</th>
+                            <th>Ball Grid</th>
+                        </tr>
+
+                        <tr>
+                            <td>Horsepower</td>
+                            <td>1030</td>
+                            <td>4630</td>
+                        </tr>
+
+                        <tr>
+                            <td>Parliamentary</td>
+                            <td>33</td>
+                            <td>153</td>
+                        </tr>
+
+                        <tr>
+                            <td>Strength</td>
+                            <td>20</td>
+                            <td>56</td>
+                        </tr>
+
+                        <tr>
+                            <td>Defending</td>
+                            <td>15</td>
+                            <td>37</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magic</td>
+                            <td>5</td>
+                            <td>11</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magic Defense</td>
+                            <td>5</td>
+                            <td>13</td>
+                        </tr>
+
+                        <tr>
+                            <td>Agility</td>
+                            <td>5</td>
+                            <td>17</td>
+                        </tr>
+
+                        <tr>
+                            <td>Happiness</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+
+                        <tr>
+                            <td>Evade</td>
+                            <td>5</td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>Precision</td>
+                            <td>5</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+        </main>
     </header>
 
 </body>
